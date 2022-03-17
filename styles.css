@@ -1,42 +1,170 @@
+@font-face {
+    font-family: 'Odin';
+    src: url('./Norse-Bold.otf') format('opentype');
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;    
 }
 
 body {
+    font-family: 'Courier New', Courier, monospace;
+
     background-color: black;
     color: white;
-    background-image:url(./bg.jpg);
     background-repeat: no-repeat;
-    /* I didn't pick this, the image did */
-    background-size: 69vh; 
+
 
     display: flex;
     align-items: right;
     justify-content: right;
-}
 
-.logo {
-    display: flex;
-    margin-top: 6rem;
-    align-items: center;
-    justify-content: center;
-    min-width: 37vw;
-
-    background-color: black;
-    opacity: 0.5;
-}
-
-h1 {
-    font-size: 10vw;
+    height: 100vh;
 }
 
 .container {
+    display: flex;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo-container {
+    max-width: 40%;
+    height: 100%;
+}
+
+.logo-text {
+
+    font-family: 'Odin', sans-serif;
+    font-size: 10vw;
+    text-align: center;
+
+    position: relative;
+    top: 20%;
+    background-color: black;
+    opacity: 0.4;
+    width: 100%;
+}
+
+.logo-container {
+    background-image: url("./bg.jpg");
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.signup-container {
     flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: space-between;
+    
+    gap: 2rem;
+
+    height: 100%;
+
+}
+
+.top,
+.middle,
+.bottom {
+    flex: 1;
+
+    padding: 3rem;
+}
+
+.top {
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: left;
+    justify-content: center;
+    gap: 1.5rem;
 
+    margin-top: 3rem;
+
+}
+
+.top p {
+    max-width: 75%;
+    font-size: 1vw;
+}
+
+.middle {
+    background: #202020;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;   
+}
+
+.middle h2 {
+    margin-bottom: 1rem;
+}
+
+.form-top {
+    display: flex;
+    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    gap: 4rem;
+}
+
+.form-top input {
+    margin-bottom: 2rem;
+}
+
+.form-left,
+.form-right,
+.form-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup label {
+    margin-bottom: 0.2rem;
+    opacity: 0.75;
+}
+
+.signup input { 
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 0.5rem 6rem 0.5rem 0.5rem;
+    text-align: left;
+
+}
+
+.signup input:focus {
+    border: 1px solid white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Remove arrows from number input */
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bottom button {
+    display: block;
+    padding: 1rem 6rem;
+    margin-bottom: 1rem;
+
+    font-weight: bold;
+    font-size: large;
+}
+
+.bottom > p {
+    display: inline;
 }

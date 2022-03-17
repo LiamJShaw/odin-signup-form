@@ -8,53 +8,61 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="logo">
-        <h1 class="logo-text">Odin</h1>
-    </div>
-
     <div class="container">
-        <div class="top">
-            <p>
-                This is not a cult! There's nothing cult-like goes on here. No cult members, cultists, whatever you want to call us. Them. 
-                The other people. The ones in cults. Not like here. This is definitely <em>not</em> a cult. Not that we would tell you if 
-                we were. We aren't, but we're just pointing out that a cult would never tell you it was a cult. People who aren't in 
-                cults, like us, will obviously also say that, so it's hard to tell sometimes. Look, just, we're not a cult. Sign up below.
-            </p>
-            <p>
-                You <em>know</em> you want to.  It's not like we're a cult or anything.
-            </p>
+        <div class="logo-container">
+            <div class="logo-text">Odin</div>
+            <div class="picture"></div>
         </div>
-
-        <div class="middle">
-            <h2 class="form-title">Let's do this!</h2>
-            
-            <div class="form">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstname" placeholder="Bob">
-
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="firstname" placeholder="Cultiste">
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="happymember@withus.org">
-
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="number" id="phoneNumber" placeholder="07666420316">
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" placeholder="hunter2">
-
-                <label for="passwordCheck">Confirm Password:</label>
-                <input type="password" id="passwordCheck" placeholder="Bob">
-
-                <label for="dream">Dream:<label>
-                <input type="text" id="dream">
+    
+        <div class="signup-container">
+            <div class="top">
+                <p>
+                    <strong>This is not a cult!</strong> There's nothing cult-like goes on here. No cult members, cultists, whatever you want to call us. Them. 
+                    The other people. The ones in cults. Not like here. This is definitely <em>not</em> a cult. Not that we would tell you if 
+                    we were. We aren't, but we're just pointing out that a cult would never tell you it was a cult. People who aren't in 
+                    cults, like us, will obviously also say that, so it's hard to tell sometimes. Look, just, we're not a cult. Sign up below.
+                </p>
+                <p>
+                    You <em>know</em> you want to.  It's not like we're a cult or anything.
+                </p>
             </div>
-        </div>
-        <div class="bottom">
-            <button type="submit">Submit</button>
-            <p class="account">Already a member?</p>
-            <a href="#cultist" class="login">Log in</a>
+    
+            <div class="middle">
+
+                <h2 class="form-title">Let's do this!</h2>
+
+                <form action="submit" class="signup">
+                    <div class="form-top">
+                        <div class="form-left">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Bob">
+    
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="happymember@withus.org">
+    
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="hunter2">
+                        </div>
+    
+                        <div class="form-right">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Cultiste">
+    
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="number" id="phoneNumber" placeholder="07666420316">
+    
+                            <label for="passwordCheck">Confirm Password</label>
+                            <input type="password" id="passwordCheck" placeholder="hunter2">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="bottom">
+                <button type="submit">Join</button>
+                <p class="account">Already a member?</p>
+                <a href="#cultist" class="login">Log in</a>
+            </div>
         </div>
     </div>
 </body>
